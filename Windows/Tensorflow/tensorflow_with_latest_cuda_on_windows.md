@@ -115,7 +115,7 @@ python configure.py
 y       # Yes, we do
 
 # 6. Please specify a list of comma-separated CUDA compute capabilities you want to build with.
-6.1,7.1 # Open the link in the question, find the corresponding capabilities of your GPU. I got `2080 ti` and `1060`, so "6.1,7.1"
+6.1,7.5 # Open the link in the question, find the corresponding capabilities of your GPU. I got `2080 ti` and `1060`, so "6.1,7.1"
 
 # 7. Please specify optimization flags to use during compilation when bazel option "--config=opt" is specified [Default is /arch:AVX]:
 [Enter] # TODO
