@@ -127,8 +127,9 @@ y       # Yes, we do
 4. Compiling
 
 ```
-bazel build --config=opt --config=mkl --config=cuda --config=v2 --define=no_tensorflow_py_deps=true --copt=-nvcc_options=disable-warnings //tensorflow/tools/pip_package:build_pip_package
+bazel build --config=opt --config=cuda --config=v2 --define=no_tensorflow_py_deps=true --copt=-nvcc_options=disable-warnings //tensorflow/tools/pip_package:build_pip_package
 ```
+
 
 5. Installation
 
@@ -148,9 +149,12 @@ TODO
 
 
 # 8. Known issues:
-## `XLA JIT` support.
+## `XLA JIT` support
 When doing `python configure.py`, if one choosed to build with `XLA JIT`, there would be errors like the following:
-
 ```
 # Error msg, TODO
 ```
+
+## MKL support
+by adding ' --config=mkl', ref https://github.com/fo40225/tensorflow-windows-wheel/issues/67
+
