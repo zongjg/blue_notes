@@ -34,6 +34,7 @@ OS: Winwdows Pro 64 bits, 1903, 18362.356
 1. Downloading `msys2-x86_64-20190524.exe` from `https://www.msys2.org/`
 2. Installing it using `C:\App\msys64` as its installtion directory
 3. Adding `C:\App\msys64\usr\bin` into the `PATH` variable.
+4. Executing `pacman -S git patch unzip`
 
 ## Visual Studio
 1. Downloading `vs_community.exe` from `https://visualstudio.microsoft.com/downloads/`
