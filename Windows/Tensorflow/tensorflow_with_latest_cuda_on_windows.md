@@ -65,6 +65,7 @@ OS: Winwdows Pro 64 bits, 1903, 18362.356
     - add it to `PATH`
 3. Run `cmd.exe` via shutcut `[Windows]+R`
 4. Runing the following ones in the pop-up `cmd` window:
+   - `conda create -n env_tf_v2.0.0-rc1`
    - `conda activate env_tf_v2.0.0-rc1`
    - `conda install python==3.6.9`
    - `pip install six numpy wheel`
