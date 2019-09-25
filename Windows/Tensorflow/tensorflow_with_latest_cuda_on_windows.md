@@ -20,7 +20,7 @@ OS: Winwdows Pro 64 bits, 1903, 18362.356
   - Python : 3.6.9
   
 ## Target:
-- Tensorflow v2.0.0-rc1 with CUDA 10.1 support
+- Tensorflow v2.0.0-rc2 with CUDA 10.1 support
 
 # 3. Perparing the building environment
 
@@ -66,8 +66,8 @@ OS: Winwdows Pro 64 bits, 1903, 18362.356
     - add it to `PATH`
 3. Run `cmd.exe` via shutcut `[Windows]+R`
 4. Runing the following ones in the pop-up `cmd` window:
-   - `conda create -n env_tf_v2.0.0-rc1`
-   - `conda activate env_tf_v2.0.0-rc1`
+   - `conda create -n env_tf_v2.0.0-rc2`
+   - `conda activate env_tf_v2.0.0-rc2`
    - `conda install python==3.6.9`
    - `pip install six numpy wheel`
    - `pip install keras_applications==1.0.6 --no-deps`
@@ -87,14 +87,11 @@ git clone https://github.com/tensorflow/tensorflow.git
 cd tensorflow
 ```
 
-2. Checking out the `v2.0.0-rc1` version:
+2. Checking out the `v2.0.0-rc2` version:
 ```bash
-# before checkout, we need to commit potential local changes
-git add -A
-git commit -m "no content changed"
-git checkout v2.0.0-rc1
+git checkout v2.0.0-rc2
 ```
-Besides `v2.0.0-rc1`, one can find other version tags on `https://github.com/tensorflow/tensorflow/tags`.
+Besides `v2.0.0-rc2`, one can find other version tags on `https://github.com/tensorflow/tensorflow/tags`.
 
 3. Configuration:
 
@@ -102,7 +99,7 @@ Besides `v2.0.0-rc1`, one can find other version tags on `https://github.com/ten
 python configure.py
 
 # 1. Please specify the location of python.
-[Enter] # Using default `env_tf_v2.0.0-rc1`'s Python executable
+[Enter] # Using default `env_tf_v2.0.0-rc2`'s Python executable
 
 # 2. Please input the desired Python library path to use.
 [Enter] # Using default value
@@ -139,7 +136,7 @@ bazel build --config=opt --config=cuda --config=v2 --define=no_tensorflow_py_dep
 # Output the compiled .whl to `c:\output_tf_pkg`
 bazel-bin\tensorflow\tools\pip_package\build_pip_package C:\output_tf_pkg\
 # Install it 
-pip install C:\output_tf_pkg\tensorflow-2.0.0rc1-cp36-cp36m-win_amd64.whl
+pip install C:\output_tf_pkg\tensorflow-2.0.0rc2-cp36-cp36m-win_amd64.whl
 ```
 
 # 6. Verification
