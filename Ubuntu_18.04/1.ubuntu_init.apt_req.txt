@@ -1,0 +1,145 @@
+# Tools/Libraries for Ubuntu 19.04 x86_64
+
+# Commons
+apt-transport-https
+apt-show-versions
+curl
+#dpx
+doxygen
+filezilla
+fonts-dejavu
+fonts-wqy-microhei
+fonts-wqy-zenhei
+git
+graphviz
+language-pack-gnome-zh-hans
+language-pack-zh-hans
+libfreetype6-dev
+meld
+openssh-server
+p7zip-full
+rar
+subversion
+vim
+vlc
+xfonts-terminus
+xpad
+libcurl4-openssl-dev
+gnome-tweak-tool
+
+# Basic Python Packages
+python-dev
+python-numpy
+python-opengl
+python-pip
+python-scipy
+#python-software-properties
+python-tk
+python3-dev
+python3-numpy
+python3-opengl
+python3-pip
+python3-scipy
+python3-software-properties
+python3-tk
+
+
+# Compilers / Other programming Languages
+gfortran
+f2c
+ratfor
+cmake
+
+
+#
+libusb-1.0-0-dev
+libturbojpeg
+libjpeg-turbo8-dev
+
+# Libraries
+freeglut3-dev
+lib32stdc++6
+libatlas-base-dev
+#libav-tools
+libblas-dev
+libboost-all-dev
+libcupti-dev
+libeigen3-dev
+libffi-dev
+libgflags-dev
+libgl1-mesa-dev
+libglew-dev
+libglfw3-dev
+libva-dev
+libglu1-mesa
+libglu1-mesa-dev
+libgoogle-glog-dev
+libgstreamer1.0-dev
+libhdf5-dev
+libhdf5-serial-dev
+libicu-dev
+libjpeg-dev
+libjpeg8-dev
+liblapack-dev
+libleveldb-dev
+liblmdb-dev
+libmp3lame-dev
+libopenblas-dev
+libopencv-dev
+libopus-dev
+libprotobuf-dev
+libsdl2-dev
+libsnappy-dev
+libssl-dev
+libsuitesparse-dev
+libtinfo-dev
+libxft-dev
+libxi-dev
+libxml2-dev
+libxmu-dev
+libxslt1-dev
+libva-dev
+mesa-common-dev
+protobuf-compiler
+qt5-default
+swig
+uncrustify
+xorg-dev
+xvfb
+zlib1g-dev
+aria2
+# libgl1-mesa-dri:i386
+# libgl1-mesa-glx:i386
+
+# Devices support
+## Bluetooth 4.0
+#blueman
+#bluetooth
+#bluez:i386
+
+# Applets
+alarm-clock-applet
+
+# Others
+gdebi
+net-tools
+
+# for OpenVPN support
+network-manager-gnome
+network-manager-pptp
+network-manager-openvpn
+network-manager-openvpn-gnome
+network-manager-l2tp
+network-manager-l2tp-gnome
+
+# for WireGuard VPN
+#wireguard
+resolvconf
+
+libcanberra-gtk-dev
+libcanberra-gtk-module
+
+terminator
+#dconf-tools # not available on Ubuntu 19.04
+notify-osd
+unity-tweak-tool
