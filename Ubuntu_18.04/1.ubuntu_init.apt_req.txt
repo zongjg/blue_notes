@@ -136,6 +136,11 @@ network-manager-l2tp-gnome
 #wireguard
 resolvconf
 
+# Serial Com
+cutecom
+lrzsz
+minicom
+
 libcanberra-gtk-dev
 libcanberra-gtk-module
 
