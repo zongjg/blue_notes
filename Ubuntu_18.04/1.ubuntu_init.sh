@@ -118,6 +118,9 @@ add_common_config() {
   sudo apt-get update
   sudo apt-get upgrade -y
 
+  print_green ">>> 5. Grant user USB port access, for USB debugging. Effective after reboot"
+  sudo usermod -a -G dialout $USER
+
   print_green ">>> 4. If you installed an Windows OS on this computer too,"
   print_green "    run 'r' to make "
   print_green "    Ubuntu 18.04 treat BIOS time as local time rather than UTC time,"
