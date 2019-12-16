@@ -326,49 +326,50 @@ start_menu() {
     print_green "9. Add Go-lang"
     print_green "0. Exit"
     print_green
+    
     read -p "Please input a option number:" num
     case "$num" in
-	1)
-	add_common_config
-	;;
-	2)
-	add_common_pkgs
-	;;
-	3)
-	add_python_conda
-	;;
-	4)
-	add_wireguard
-	;;
-	5)
-	add_nv_driver
-	;;
-	6)
-	add_cuda_cudnn
-	;;
-	7)
-	add_gui_sw
-	;;
-	8)
-	add_rust_lang
-	;;
-	9)
-	add_go_lang
-	;;
-	0)
-	exit 1
-	;;
-	*)
-	#clear
-	print_red "Please input a correct number ..."
-	start_menu
-	;;
+      1)
+      add_common_config
+      ;;
+      2)
+      add_common_pkgs
+      ;;
+      3)
+      add_python_conda
+      ;;
+      4)
+      add_wireguard
+      ;;
+      5)
+      add_nv_driver
+      ;;
+      6)
+      add_cuda_cudnn
+      ;;
+      7)
+      add_gui_sw
+      ;;
+      8)
+      add_rust_lang
+      ;;
+      9)
+      add_go_lang
+      ;;
+      0)
+      exit 1
+      ;;
+      *)
+      #clear
+      print_red "Please input a correct number ..."
+      start_menu
+      ;;
     esac
   print_red ">>> $num : DONE!"
   start_menu
 } 
 
-
+# if $PKG_DIR not exists then create it
 [ -e $PKG_DIR ] || mkdir -p $PKG_DIR
 
 start_menu
