@@ -148,3 +148,6 @@ terminator
 #dconf-tools # not available on Ubuntu 19.04
 notify-osd
 unity-tweak-tool
+
+# Remote desktop to Windows Clients
+remmina
