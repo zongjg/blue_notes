@@ -226,10 +226,13 @@ add_cuda_cudnn() {
     sudo apt-mark hold $rt_lib
   done
 
-sudo apt-mark hold libnccl2
-sudo apt install -y libnccl2="2.5.6-1+cuda10.1"
-sudo apt-mark hold libnccl-dev
-sudo apt install -y libnccl-dev="2.5.6-1+cuda10.1"
+  sudo apt-mark hold libnccl2
+  sudo apt install -y libnccl2="2.5.6-1+cuda10.1"
+  sudo apt-mark hold libnccl-dev
+  sudo apt install -y libnccl-dev="2.5.6-1+cuda10.1"
+
+  sudo apt-mark hold cuda cuda-repo-ubuntu1804 libcudnn7 libcudnn7-dev libnccl-dev  libnccl2   libnvinfer-dev libnvinfer-plugin-dev libnvinfer-plugin6  libnvinfer6 libnvonnxparsers-dev libnvonnxparsers6 libnvparsers-dev libnvparsers6
+
 
   print_green ">>>BM: create/update /usr/local/cuda linking to $BM_OPTION_CUDA_TOOLKITPATH ... "
   sudo ln -f -s $BM_OPTION_CUDA_TOOLKITPATH /usr/local/cuda
