@@ -23,7 +23,7 @@ BM_CUDA_PROFILE=/etc/profile.d/bm_cuda.sh
 BM_RUST_PROF=/etc/profile.d/bm_rust.sh
 
 # GO Language 
-GO_PKG=go1.13.5.linux-amd64.tar.gz
+GO_PKG=go1.13.7.linux-amd64.tar.gz
 #GO_LANG_DL_LINK=https://dl.google.com/go/$GO_PKG
 GO_LANG_DL_LINK=https://studygolang.com/dl/golang/$GO_PKG
 BM_GO_PROF=/etc/profile.d/bm_go.sh
@@ -297,6 +297,8 @@ add_go_lang() {
 	aria2c --dir=$PKG_DIR -c $GO_LANG_DL_LINK
 	sudo tar -C /usr/local -xzf $PKG_DIR/$GO_PKG
 	sudo bash -c "echo 'export PATH=\$PATH:/usr/local/go/bin' > $BM_GO_PROF"
+  sudo bash -c "echo 'export GOPATH=$HOME/go' > $BM_GO_PROF"
+
 	source $BM_GO_PROF	
 	#rm $GO_PKG
 	print_green ">>> GO Lang Installation DONE."
